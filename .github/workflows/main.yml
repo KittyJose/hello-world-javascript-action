@@ -17,4 +17,4 @@ jobs:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         uses: KittyJose/InsightsDev@master
         with:
-           json: "$GITHUB_CONTEXT"
+           json: ${{ toJson(github) }}
