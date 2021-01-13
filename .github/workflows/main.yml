@@ -15,6 +15,6 @@ jobs:
       - name: print first job output
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
-        uses: actions/InsightsDev@master
+        uses: KittyJose/InsightsDev@master
         with:
            json: "$GITHUB_CONTEXT"
