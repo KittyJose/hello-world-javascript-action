@@ -13,4 +13,6 @@ jobs:
     needs: one
     steps:
       - name: print first job output
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
